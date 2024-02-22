@@ -1,0 +1,63 @@
+{
+  "Palette-Id": "toqio",
+  "title": "Toqio Custom",
+  "patchPalettes": ["flowable-page-palette"],
+  "resourceBundles": [
+    "com/flowable/config/custom/palette/translation"
+  ],
+  "groups": {
+    "toqio-custom": {
+      "index": 1
+    }
+  },
+  "stencils": [
+    {
+      "id": "toqio-input-text",
+      "superId": "base-component",
+      "groups": [
+        "toqio-custom"
+      ],
+      "viewPath": "component-presentations/editor-views/avatar.svg",
+      "icon": "../palette-icons?id=component-presentations/palette-icons/text-2.png",
+      "bigIcon": "../palette-icons?id=component-presentations/palette-icons/text-2.png",
+      "layout": [
+        {
+            "type": "layout.form.controls",
+            "minWidth": 150,
+            "minHeight": 100,
+            "minControlWidth": 300,
+            "minControlHeight": 70,
+            "offsetX": 70,
+            "offsetY": 70
+        }
+      ],
+      "properties": [
+            {
+                "id": "visible",
+                "visible": false,
+                "optional": true
+            },
+            {
+                "id": "description",
+                "visible": false
+            },
+            {
+                "id": "label",
+                "visible": false
+            },
+            {
+                "id": "label-position",
+                "visible": false
+            },
+            {
+                "id": "default-value",
+                "visible": false
+            },
+            {
+                "id": "modelevents",
+                "visible": false
+            }
+      ]
+    }
+  ]
+}
